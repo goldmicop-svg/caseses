@@ -109,15 +109,16 @@ for number, filename in enumerate(CHARACTER_IMAGES, start=1):
 # Категории («теги») нужны фильтрам на странице кейсов: клиент фильтрует
 # карточки именно по этому серверному списку, поэтому категории работают.
 CASES = [
-    {"id": "bomzh", "name": "«БОМЖ»", "price": 14, "color": "#8D8F9A", "icon": "◇", "min_value": 10, "max_value": 95, "tags": ["Недорогие", "Популярные"]},
-    {"id": "school_lunch", "name": "«ШКОЛЬНЫЙ ОБЕД»", "price": 70, "color": "#FFB347", "icon": "◆", "min_value": 50, "max_value": 170, "tags": ["Недорогие", "Новые"]},
-    {"id": "rovny_vas", "name": "«РОВНЫЙ ВАСЬ»", "price": 126, "color": "#55A7FF", "icon": "✦", "min_value": 90, "max_value": 250, "tags": ["Недорогие", "Популярные"]},
-    {"id": "cool_slayer", "name": "«КРУТОЙ SLAYER»", "price": 210, "color": "#8B5CFF", "icon": "⬡", "min_value": 150, "max_value": 430, "tags": ["Новые", "Популярные"]},
-    {"id": "true_am_am", "name": "«TRUE AM AM»", "price": 322, "color": "#FF6FD8", "icon": "✹", "min_value": 230, "max_value": 620, "tags": ["Новые", "Особые"]},
-    {"id": "mellstroy", "name": "«MELLSTROY»", "price": 476, "color": "#FF4D4D", "icon": "◈", "min_value": 340, "max_value": 990, "tags": ["Популярные", "Особые"]},
-    {"id": "worker", "name": "«ВОРКЕР»", "price": 728, "color": "#33D69F", "icon": "⚙", "min_value": 520, "max_value": 1650, "tags": ["Новые", "Особые"]},
-    {"id": "meme_case", "name": "«MEME CASE»", "price": 1386, "color": "#FFD76A", "icon": "✪", "min_value": 990, "max_value": 5000, "tags": ["Особые", "Популярные"]},
+    {"id": "bomzh", "name": "«БОМЖ»", "price": 70, "color": "#8D8F9A", "icon": "◇", "min_value": 10, "max_value": 95, "tags": ["Недорогие", "Популярные"]},
+    {"id": "school_lunch", "name": "«ШКОЛЬНЫЙ ОБЕД»", "price": 120, "color": "#FFB347", "icon": "◆", "min_value": 50, "max_value": 170, "tags": ["Недорогие", "Новые"]},
+    {"id": "rovny_vas", "name": "«РОВНЫЙ ВАСЬ»", "price": 200, "color": "#55A7FF", "icon": "✦", "min_value": 90, "max_value": 250, "tags": ["Недорогие", "Популярные"]},
+    {"id": "cool_slayer", "name": "«КРУТОЙ SLAYER»", "price":350, "color": "#8B5CFF", "icon": "⬡", "min_value": 150, "max_value": 430, "tags": ["Новые", "Популярные"]},
+    {"id": "true_am_am", "name": "«TRUE AM AM»", "price": 500, "color": "#FF6FD8", "icon": "✹", "min_value": 230, "max_value": 620, "tags": ["Новые", "Особые"]},
+    {"id": "mellstroy", "name": "«MELLSTROY»", "price": 750, "color": "#FF4D4D", "icon": "◈", "min_value": 340, "max_value": 990, "tags": ["Популярные", "Особые"]},
+    {"id": "worker", "name": "«ВОРКЕР»", "price": 1200, "color": "#33D69F", "icon": "⚙", "min_value": 520, "max_value": 1650, "tags": ["Новые", "Особые"]},
+    {"id": "meme_case", "name": "«MEME CASE»", "price": 3500, "color": "#FFD76A", "icon": "✪", "min_value": 990, "max_value": 5000, "tags": ["Особые", "Популярные"]},
 ]
+    
 
 # Игровой прогресс намеренно остаётся in-memory для демо.
 GAME_DB = {}
@@ -125,7 +126,8 @@ GAME_DB = {}
 
 # ======================================================================
 # УЧЁТНЫЕ ЗАПИСИ
-# ======================================================================
+# =======================
+===============================================
 
 def db_connection():
     conn = sqlite3.connect(DATABASE)
